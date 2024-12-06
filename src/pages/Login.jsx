@@ -4,11 +4,13 @@ import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../AuthContext';
 
 export default function Login() {
+    // State for username and password
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
     const authContext = useContext(AuthContext);
 
+    // Function to handle login
     function login() {
         const isCorrectUsername = username === "haris@sigmaschool.co";
         const isCorrectPassword = password === "password";

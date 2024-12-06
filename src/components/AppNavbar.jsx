@@ -19,9 +19,12 @@ export default function AppNavbar() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
+                        {/* me-auto pushes the content to the left side of the navbar */}
                         <Nav.Link as={Link} to="/">Home</Nav.Link>
+                        {/* Home link that uses React Router's Link component as={Link} tells Bootstrap to use React Router's Link instead of a default anchor tag */}
                         {!token && (
                             <Nav.Link as={Link} to="/login">Login</Nav.Link>
+                            // Conditional rendering when user is NOT logged in
                         )}
                         {token && (
                             <>
@@ -31,6 +34,7 @@ export default function AppNavbar() {
                                     Logout
                                 </Button>
                             </>
+                            // Conditional rendering when user IS logged in
                         )}
                     </Nav>
                 </Navbar.Collapse>

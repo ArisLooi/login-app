@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { AuthContext } from "../AuthContext";
 
 export default function Profile() {
-
+    // Access the token from AuthContext
     const { token } = useContext(AuthContext);
 
     return (
