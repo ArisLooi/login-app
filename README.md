@@ -25,7 +25,7 @@ To run this project, you need Node.js and npm installed on your machine.
     cd login-app
 3. Install the dependencies:
    ```bash
-   npm start
+   npm install
 
 ## Usage
 1. Start the development server:
